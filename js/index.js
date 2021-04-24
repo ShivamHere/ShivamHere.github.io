@@ -51,6 +51,13 @@ window.addEventListener("hashchange", function() {
     window.scrollTo(window.scrollX, window.scrollY - 50);
 });
 
+var navX = document.querySelector("nav div")
+for(var i=0; i<navItems.length; i++){
+    navItems[i].addEventListener("click", function(){
+        navX.classList.remove("show");
+    });
+}
+
 // Car
 
 $car = $(".car");
