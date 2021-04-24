@@ -67,18 +67,18 @@ $carImg = $(".car img");
 var i = 0;
 $car.click(function() {
     switch (i) {
-        case 0:
+        case 0:                 //Will stop moving and suspension will also stop.
             $($surface).toggleClass("move");
-            break;
-        case 1:
-            $($surface).toggleClass("move");
-            break;
-        case 2:
-            $($carImg).attr("src", "img/Img_05.png");
             $($car).toggleClass("suspension");
             break;
-        case 3:
+        case 1:                 //Headlight will be turned off.
+            $($carImg).attr("src", "img/Img_05.png");
+            break;
+        case 2:                 //Headlight will be turned on.
             $($carImg).attr("src", "img/Img_06.png");
+            break;
+        case 3:                 //Will start moving and suspension also start.
+            $($surface).toggleClass("move");
             $($car).toggleClass("suspension");
             break;
     }
