@@ -91,7 +91,7 @@ var toTop = document.querySelector(".up-icon");
 toTop.addEventListener("click", function(){
     var scrollInterval = setInterval(function(){
         if ( window.scrollY != 0 ) {
-            window.scrollBy( 0, -50 );
+            window.scrollBy( 0, -90 );
         }
         else clearInterval(scrollInterval);
     },20);
